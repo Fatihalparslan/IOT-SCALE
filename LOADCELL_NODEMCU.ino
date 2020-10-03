@@ -1,14 +1,14 @@
 #include <ESP8266WiFi.h>
 #include <PubSubClient.h>
 #include <SoftwareSerial.h>
-int rxPin = D6;                                               //ESP8266 RX pini
-int txPin = D5;                                               //ESP8266 TX pini
+int rxPin = D5;                                               //ESP8266 RX pini
+int txPin = D6;                                               //ESP8266 TX pini
 SoftwareSerial esp(rxPin, txPin);                             //Seri haberleşme pin ayarlarını yapıyoruz.
 //Enter your wifi credentials
-const char* ssid = "TurkTelekom_T32AD";
-const char* wifi_password = "gpvqvx0q";
+const char* ssid = "xxxx";
+const char* wifi_password = "xxx";
 
-const char* mqtt_server = "192.168.1.102";
+const char* mqtt_server = "192.168.1.100";
 const char* mqtt_topic = "test";
 const char* mqtt_username = "fatih";
 const char* mqtt_password = "alparslan";
