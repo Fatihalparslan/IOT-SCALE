@@ -10,7 +10,7 @@ k1.write(0,0,'Grams')
 mqtt_username = "fatih"
 mqtt_password = "alparslan"
 mqtt_topic = "test"
-mqtt_broker_ip = "192.168.1.102" #IP address of Raspberry PI
+mqtt_broker_ip = "192.168.1.100" #IP address of Raspberry PI
 j=0
 client = mqtt.Client()
 # Set the username and password for the MQTT client
