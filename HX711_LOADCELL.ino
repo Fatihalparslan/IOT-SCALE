@@ -8,8 +8,8 @@
 
 #include "HX711.h"  // you can download it from https://github.com/juano2310/HX711ADC
 #include <SoftwareSerial.h>//This library allow us to use additional pins for a new serial interface
-int rxPin = 10;//NODEMCU RX pin
-int txPin = 11;//NODEMCU TX pin
+int rxPin = 11;//NODEMCU RX pin
+int txPin = 10;//NODEMCU TX pin
 SoftwareSerial esp(rxPin, txPin);//We call software serial as esp and we set rx&tx pins
 #define DOUT  3//Data Out pin from HX711 Module
 #define CLK  2//CLOCK SIGNAL pin
@@ -60,12 +60,12 @@ i++;
    esp.println((temp/i),3);//send average value to NODEMCU
    i=0;//make counter zero
    temp=0;/make temp variable zero
-  Serial.print("Reading: ");
+/*  Serial.print("Reading: ");
   Serial.print(scale.get_units(), 3);
   Serial.print(" kg"); //Change this to kg and re-adjust the calibration factor if you follow SI units like a sane person
   Serial.print(" calibration_factor: ");
   Serial.print(calibration_factor);
-  Serial.println();
+  Serial.println();*/
   }
   if(Serial.available())
   {
