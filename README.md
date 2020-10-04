@@ -44,4 +44,4 @@ For example like this.
 ```
 sudo mosquitto_passwd -c /etc/mosquitto/pwfile fatih
 ```
-For more detailed information, see this video :
+For more detailed information, see this video : https://youtu.be/_uFVRrQsGKU
